@@ -321,6 +321,9 @@ ul { list-style: none; }
   grid-column: 2;
   grid-row: 2;
 }
+.hero-card--portrait img {
+  object-position: center 20%;
+}
 .video-tag {
   position: absolute;
   bottom: 10px;
@@ -500,6 +503,10 @@ ul { list-style: none; }
   gap: 64px;
   align-items: center;
 }
+.sobre-images--single {
+  grid-template-columns: 1fr !important;
+}
+.sobre-images--single .sobre-img-main { height: 520px; }
 .sobre-images {
   position: relative;
   display: grid;
@@ -705,13 +712,13 @@ ul { list-style: none; }
    PROCESO
    ============================================ */
 .proceso {
-  background: var(--dark);
+  background: #3A2E28;
   padding: var(--section-pad) var(--gutter);
 }
 .proceso .section-title {
   max-width: var(--max-w);
   margin: 0 auto 56px;
-  color: var(--cream);
+  color: #F5F0EB;
 }
 .proceso-steps {
   max-width: var(--max-w);
@@ -736,7 +743,7 @@ ul { list-style: none; }
 }
 .paso-title {
   font-family: var(--ff-serif);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 400;
   color: var(--cream);
 }
