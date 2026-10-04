@@ -724,7 +724,7 @@ ul { list-style: none; }
    PROCESO
    ============================================ */
 .proceso {
-  background: #4A3B34 !important;
+  background: #6B3A47;
   padding: var(--section-pad) var(--gutter);
 }
 .proceso .section-title {
@@ -749,6 +749,7 @@ ul { list-style: none; }
 .paso-num {
   font-family: var(--ff-serif);
   font-size: 1rem;
+  color: var(--rose-light) !important;
   font-weight: 300;
   color: var(--rose);
   letter-spacing: 0.02em;
@@ -835,7 +836,7 @@ ul { list-style: none; }
    FOOTER
    ============================================ */
 .footer {
-  background: var(--dark);
+  background: #6B3A47;
   padding: 28px var(--gutter);
   display: flex;
   align-items: center;
