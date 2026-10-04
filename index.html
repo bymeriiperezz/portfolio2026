@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meri Pérez — Creadora UGC en Barcelona. Contenido para TikTok, Instagram Reels y campañas de marca. Belleza, moda, gastronomía y lifestyle.">
+  <meta property="og:title" content="Meri Pérez · Creadora UGC Barcelona">
+  <meta property="og:description" content="Contenido UGC para marcas que quieren conectar de verdad con su audiencia.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <title>Meri Pérez · Creadora UGC Barcelona</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">Meri Pérez</a>
+    <div class="nav-links">
+      <a href="#trabajo">Trabajo</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#contacto" class="nav-cta">Trabajemos juntas</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#trabajo" class="mobile-link">Trabajo</a>
+    <a href="#sobre-mi" class="mobile-link">Sobre mí</a>
+    <a href="#servicios" class="mobile-link">Servicios</a>
+    <a href="#proceso" class="mobile-link">Proceso</a>
+    <a href="#contacto" class="mobile-link mobile-link-cta">Trabajemos juntas</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-location">Barcelona · UGC</p>
+        <h1 class="hero-name">Meri<br>Pérez</h1>
+        <p class="hero-headline">Contenido que hace que tu producto se vea exactamente como merece.</p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn-primary">Trabajemos juntas</a>
+          <a href="#trabajo" class="btn-secondary">Ver mi trabajo</a>
+        </div>
+        <div class="availability-badge">
+          <span class="availability-dot"></span>
+          Disponible para colaboraciones
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-grid">
+          <div class="hero-card hero-card--large">
+            <video autoplay muted loop playsinline poster="assets/images/meri-feria-1.jpg">
+              <source src="assets/videos/bershka.mp4" type="video/mp4">
+            </video>
+            <span class="video-tag">Moda</span>
+          </div>
+          <div class="hero-card hero-card--small">
+            <video autoplay muted loop playsinline poster="assets/images/meri-estudio-1.jpg">
+              <source src="assets/videos/medicube-rutina.mp4" type="video/mp4">
+            </video>
+            <span class="video-tag">Belleza</span>
+          </div>
+          <div class="hero-card hero-card--medium">
+            <video autoplay muted loop playsinline poster="assets/images/meri-feria-2.jpg">
+              <source src="assets/videos/pantene.mp4" type="video/mp4">
+            </video>
+            <span class="video-tag">Haircare</span>
+          </div>
+          <div class="hero-card hero-card--portrait">
+            <img src="assets/images/meri-feria-1.jpg" alt="Meri Pérez, creadora UGC">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARCAS -->
+  <section class="marcas" style="padding: 36px var(--gutter, 40px)">
+    <p class="marcas-label">Han confiado en mí</p>
+    <div class="marcas-list">
+      <span class="marca-item">Pantene</span>
+      <span class="marca-sep">·</span>
+      <span class="marca-item">Garnier</span>
+      <span class="marca-sep">·</span>
+      <span class="marca-item">Medicube</span>
+      <span class="marca-sep">·</span>
+      <span class="marca-item">Jardín de Hadas</span>
+      <span class="marca-sep">·</span>
+      <span class="marca-item">The Girls Club</span>
+      <span class="marca-sep">·</span>
+      <span class="marca-item">The Moment</span>
+      <span class="marca-sep">·</span>
+      <span class="marca-item">Billy Brunch</span>
+      <span class="marca-sep">·</span>
+      <span class="marca-item">Demartini</span>
+    </div>
+  </section>
+
+  <!-- TRABAJO -->
+  <section class="trabajo" id="trabajo">
+    <div class="trabajo-header">
+      <h2 class="section-title">Mi trabajo</h2>
+      <div class="filtros" id="filtros">
+        <button class="filtro active" data-filter="all">Todo</button>
+        <button class="filtro" data-filter="belleza">Belleza</button>
+        <button class="filtro" data-filter="moda">Moda</button>
+        <button class="filtro" data-filter="gastronomia">Gastronomía</button>
+        <button class="filtro" data-filter="lifestyle">Lifestyle</button>
+      </div>
+    </div>
+
+    <div class="portfolio-grid" id="portfolioGrid">
+
+      <!-- BELLEZA -->
+      <div class="portfolio-item portfolio-item--tall" data-category="belleza" data-label="Skincare · Talking to camera · Review">
+        <div class="portfolio-video-wrap">
+          <video muted loop playsinline preload="none" poster="assets/images/meri-estudio-1.jpg">
+            <source src="assets/videos/medicube-rutina.mp4" type="video/mp4">
+          </video>
+          <div class="portfolio-overlay">
+            <p class="portfolio-brand">Medicube</p>
+            <p class="portfolio-desc">Review de rutina skincare. Talking to camera, demostración de producto y experiencia de uso.</p>
+            <span class="portfolio-tag">Skincare</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="belleza" data-label="Skincare · Producto en uso · Demo">
+        <div class="portfolio-video-wrap">
+          <video muted loop playsinline preload="none" poster="assets/images/meri-estudio-2.jpg">
+            <source src="assets/videos/medicube-detox.mp4" type="video/mp4">
+          </video>
+          <div class="portfolio-overlay">
+            <p class="portfolio-brand">Medicube</p>
+            <p class="portfolio-desc">Mascarilla detox en uso. Formato demostración con presencia a cámara natural.</p>
+            <span class="portfolio-tag">Demo</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item portfolio-item--wide" data-category="belleza" data-label="Haircare · Product demo · Lifestyle">
+        <div class="portfolio-video-wrap">
+          <video muted loop playsinline preload="none" poster="assets/images/meri-feria-2.jpg">
+            <source src="assets/videos/pantene.mp4" type="video/mp4">
+          </video>
+          <div class="portfolio-overlay">
+            <p class="portfolio-brand">Pantene</p>
+            <p class="portfolio-desc">Contenido de producto haircare. Estética cuidada, lifestyle y demostración de uso.</p>
+            <span class="portfolio-tag">Haircare</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODA -->
+      <div class="portfolio-item portfolio-item--tall" data-category="moda" data-label="Moda · Editorial · Lifestyle">
+        <div class="portfolio-video-wrap">
+          <video muted loop playsinline preload="none" poster="assets/images/meri-feria-1.jpg">
+            <source src="assets/videos/bershka.mp4" type="video/mp4">
+          </video>
+          <div class="portfolio-overlay">
+            <p class="portfolio-brand">Bershka</p>
+            <p class="portfolio-desc">Contenido fashion con estética editorial. Nueva colección con presencia a cámara segura y composición cuidada.</p>
+            <span class="portfolio-tag">Fashion</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="moda" data-label="Moda · Probador · Talking to camera">
+        <div class="portfolio-video-wrap">
+          <video muted loop playsinline preload="none" poster="assets/images/meri-feria-3.jpg">
+            <source src="assets/videos/stradivarius.mp4" type="video/mp4">
+          </video>
+          <div class="portfolio-overlay">
+            <p class="portfolio-brand">Stradivarius</p>
+            <p class="portfolio-desc">Probador auténtico. Reacción real, tono cercano. El tipo de contenido que conecta.</p>
+            <span class="portfolio-tag">Try-on</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIFESTYLE -->
+      <div class="portfolio-item" data-category="lifestyle" data-label="Lifestyle · Evento · Storytelling">
+        <div class="portfolio-video-wrap">
+          <video muted loop playsinline preload="none" poster="assets/images/meri-jardin.jpg">
+            <source src="assets/videos/the-girls-club.mp4" type="video/mp4">
+          </video>
+          <div class="portfolio-overlay">
+            <p class="portfolio-brand">The Girls Club</p>
+            <p class="portfolio-desc">Contenido de evento con storytelling. Formato experiencial que transmite ambiente y comunidad.</p>
+            <span class="portfolio-tag">Lifestyle</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item portfolio-item--wide" data-category="lifestyle" data-label="Lifestyle · Talking to camera · Hook">
+        <div class="portfolio-video-wrap">
+          <video muted loop playsinline preload="none" poster="assets/images/meri-camara.jpg">
+            <source src="assets/videos/the-moment.mp4" type="video/mp4">
+          </video>
+          <div class="portfolio-overlay">
+            <p class="portfolio-brand">The Moment</p>
+            <p class="portfolio-desc">Hook directo, tono cercano. Talking to camera con capacidad de retención desde el primer segundo.</p>
+            <span class="portfolio-tag">Hook</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- GASTRONOMÍA -->
+      <div class="portfolio-item" data-category="gastronomia" data-label="Gastronomía · Storytelling · Experiencia">
+        <div class="portfolio-video-wrap">
+          <video muted loop playsinline preload="none" poster="assets/images/meri-rosa.jpg">
+            <source src="assets/videos/billy-brunch.mp4" type="video/mp4">
+          </video>
+          <div class="portfolio-overlay">
+            <p class="portfolio-brand">Billy Brunch</p>
+            <p class="portfolio-desc">Storytelling de experiencia gastronómica. Formato orgánico que genera deseo de visita.</p>
+            <span class="portfolio-tag">Food</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="gastronomia" data-label="Gastronomía · Evento · Lifestyle">
+        <div class="portfolio-video-wrap">
+          <video muted loop playsinline preload="none" poster="assets/images/meri-feria-1.jpg">
+            <source src="assets/videos/champions-burger.mp4" type="video/mp4">
+          </video>
+          <div class="portfolio-overlay">
+            <p class="portfolio-brand">Champions Burger</p>
+            <p class="portfolio-desc">Cobertura de evento gastronómico. Formato inmersivo que capta la energía del momento.</p>
+            <span class="portfolio-tag">Evento</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="gastronomia" data-label="Gastronomía · Producto · Review">
+        <div class="portfolio-video-wrap">
+          <video muted loop playsinline preload="none" poster="assets/images/meri-estudio-3.jpg">
+            <source src="assets/videos/demartini.mp4" type="video/mp4">
+          </video>
+          <div class="portfolio-overlay">
+            <p class="portfolio-brand">Demartini</p>
+            <p class="portfolio-desc">Review de producto gastronómico. Presentación del producto con narrativa apetecible.</p>
+            <span class="portfolio-tag">Review</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="sobre-mi" id="sobre-mi">
+    <div class="sobre-inner">
+      <div class="sobre-images">
+        <div class="sobre-img-main">
+          <img src="assets/images/meri-jardin.jpg" alt="Meri Pérez en jardín de Barcelona" loading="lazy">
+        </div>
+        <div class="sobre-img-side">
+          <img src="assets/images/meri-camara.jpg" alt="Meri Pérez con cámara" loading="lazy">
+        </div>
+      </div>
+      <div class="sobre-text">
+        <h2 class="section-title">Soy Meri</h2>
+        <p class="sobre-intro">Creadora de contenido UGC basada en Barcelona. Estudio Publicidad y Relaciones Públicas — y eso cambia la manera en que pienso el contenido.</p>
+        <p class="sobre-body">No solo pienso en que el vídeo quede bonito. Pienso en por qué va a funcionar: qué engancha en los primeros segundos, qué hace que alguien se quede, qué empuja a la acción. Entiendo cómo habla TikTok, cómo habla Instagram y cómo habla una campaña de publicidad. Y sé crear contenido que funciona en los tres.</p>
+        <p class="sobre-formacion">Estudiante de Publicidad y RRPP · Barcelona</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="servicios" id="servicios">
+    <div class="servicios-header">
+      <h2 class="section-title">Servicios</h2>
+    </div>
+
+    <div class="servicios-grid">
+      <div class="servicio-card servicio-card--featured">
+        <div class="servicio-visual">
+          <img src="assets/images/meri-estudio-1.jpg" alt="Vídeo UGC" loading="lazy">
+        </div>
+        <div class="servicio-content">
+          <h3 class="servicio-title">Vídeo UGC</h3>
+          <p class="servicio-desc">Contenido vertical pensado para TikTok, Instagram Reels, Paid Ads y páginas de producto.</p>
+          <ul class="servicio-formats">
+            <li>Talking to camera</li>
+            <li>Voice over</li>
+            <li>Lifestyle</li>
+            <li>Review y demo</li>
+            <li>Tutorial</li>
+            <li>Storytelling</li>
+            <li>Hook · Unboxing</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="servicio-card">
+        <div class="servicio-visual">
+          <img src="assets/images/meri-feria-2.jpg" alt="Fotografía UGC" loading="lazy">
+        </div>
+        <div class="servicio-content">
+          <h3 class="servicio-title">Fotografía UGC</h3>
+          <p class="servicio-desc">Imágenes para redes, web, producto y campañas. Estética lifestyle con el producto como protagonista.</p>
+        </div>
+      </div>
+
+      <div class="servicio-card">
+        <div class="servicio-visual">
+          <img src="assets/images/meri-jardin.jpg" alt="Colaboración recurrente" loading="lazy">
+        </div>
+        <div class="servicio-content">
+          <h3 class="servicio-title">Colaboración recurrente</h3>
+          <p class="servicio-desc">Contenido mensual para marcas que necesitan una creadora de forma continuada. Consistencia y visión de marca a largo plazo.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PACKS -->
+    <div class="packs" id="packs">
+      <h3 class="packs-title">Packs disponibles</h3>
+      <div class="packs-grid">
+        <div class="pack-card">
+          <p class="pack-name">Pack Vídeo</p>
+          <p class="pack-desc">Vídeos UGC editados listos para publicar en redes o usar en campañas.</p>
+          <p class="pack-detail">Vertical · Subtítulos incluidos · Entrega en 5–7 días</p>
+          <a href="#contacto" class="pack-cta">Pedir información</a>
+        </div>
+        <div class="pack-card">
+          <p class="pack-name">Pack Foto</p>
+          <p class="pack-desc">Fotografías lifestyle y de producto para web, redes y anuncios.</p>
+          <p class="pack-detail">Alta resolución · Uso comercial incluido · Entrega en 3–5 días</p>
+          <a href="#contacto" class="pack-cta">Pedir información</a>
+        </div>
+        <div class="pack-card pack-card--highlight">
+          <p class="pack-badge">Más solicitado</p>
+          <p class="pack-name">Pack Contenido</p>
+          <p class="pack-desc">Combinación de vídeo y fotografía. Todo lo que necesitas para lanzar una campaña.</p>
+          <p class="pack-detail">Vídeo + Foto · Formatos optimizados · Entrega en 7–10 días</p>
+          <a href="#contacto" class="pack-cta">Pedir información</a>
+        </div>
+        <div class="pack-card">
+          <p class="pack-name">Pack Custom</p>
+          <p class="pack-desc">¿Tienes una necesidad específica? Hablamos y lo diseñamos.</p>
+          <p class="pack-detail">Briefing personalizado · Presupuesto a medida</p>
+          <a href="#contacto" class="pack-cta">Contáctame</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="proceso" id="proceso">
+    <h2 class="section-title">Cómo trabajamos</h2>
+    <div class="proceso-steps">
+      <div class="proceso-step">
+        <div class="paso-num">01</div>
+        <div class="paso-content">
+          <h4 class="paso-title">Briefing</h4>
+          <p class="paso-desc">Me cuentas qué necesitas: producto, estilo, plataforma y referencias.</p>
+        </div>
+      </div>
+      <div class="proceso-step">
+        <div class="paso-num">02</div>
+        <div class="paso-content">
+          <h4 class="paso-title">Contrato y pago inicial</h4>
+          <p class="paso-desc">Firmamos el acuerdo y se abona el 50% para reservar fecha.</p>
+        </div>
+      </div>
+      <div class="proceso-step">
+        <div class="paso-num">03</div>
+        <div class="paso-content">
+          <h4 class="paso-title">Producto</h4>
+          <p class="paso-desc">Me envías el producto o me desplazo si hace falta.</p>
+        </div>
+      </div>
+      <div class="proceso-step">
+        <div class="paso-num">04</div>
+        <div class="paso-content">
+          <h4 class="paso-title">Grabación</h4>
+          <p class="paso-desc">Grabo siguiendo el briefing acordado.</p>
+        </div>
+      </div>
+      <div class="proceso-step">
+        <div class="paso-num">05</div>
+        <div class="paso-content">
+          <h4 class="paso-title">Edición y entrega</h4>
+          <p class="paso-desc">Editado o en bruto según el pack contratado.</p>
+        </div>
+      </div>
+      <div class="proceso-step">
+        <div class="paso-num">06</div>
+        <div class="paso-content">
+          <h4 class="paso-title">Revisión</h4>
+          <p class="paso-desc">Una revisión incluida. Las adicionales tienen coste extra.</p>
+        </div>
+      </div>
+      <div class="proceso-step">
+        <div class="paso-num">07</div>
+        <div class="paso-content">
+          <h4 class="paso-title">Entrega final</h4>
+          <p class="paso-desc">Archivos definitivos y pago del 50% restante.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL / CONTACTO -->
+  <section class="contacto" id="contacto">
+    <div class="contacto-text">
+      <h2 class="section-title">¿Tu producto<br>merece verse así?</h2>
+      <p class="contacto-sub">Cuéntame qué necesitas. En menos de 48h tienes mi respuesta con una propuesta adaptada a tu marca.</p>
+      <a href="mailto:bymeriiperezz@gmail.com" class="btn-primary">Trabajemos juntas</a>
+      <div class="contacto-links">
+        <a href="mailto:bymeriiperezz@gmail.com" class="contacto-link">
+          <span class="contacto-link-label">Email</span>
+          bymeriiperezz@gmail.com
+        </a>
+        <a href="https://instagram.com/bymeriiperezz" target="_blank" rel="noopener" class="contacto-link">
+          <span class="contacto-link-label">Instagram</span>
+          @bymeriiperezz
+        </a>
+        <a href="https://tiktok.com/@bymeriiperezz" target="_blank" rel="noopener" class="contacto-link">
+          <span class="contacto-link-label">TikTok</span>
+          @bymeriiperezz
+        </a>
+      </div>
+    </div>
+    <div class="contacto-visual">
+      <img src="assets/images/meri-rosa.jpg" alt="Meri Pérez" loading="lazy">
+      <p class="contacto-visual-caption">El contenido correcto,<br>en el momento correcto.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span class="footer-logo">Meri Pérez</span>
+    <span class="footer-copy">© 2025 · Creadora UGC · Barcelona</span>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE CONTACTO -->
+  <a href="#contacto" class="floating-cta" id="floatingCta" aria-label="Trabajemos juntas">
+    Trabajemos juntas
+  </a>
+
+  <!-- LIGHTBOX para vídeos -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vídeo en pantalla completa">
+    <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+    <video controls playsinline>
+      <source src="" type="video/mp4">
+    </video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
