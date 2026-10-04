@@ -230,7 +230,7 @@ ul { list-style: none; }
   display: inline-flex;
   align-items: center;
   padding: 13px 28px;
-  background: var(--dark);
+  background: #6B3A47;
   color: var(--cream);
   font-size: 0.82rem;
   font-weight: 400;
@@ -666,7 +666,7 @@ ul { list-style: none; }
   transform: translateY(-3px);
 }
 .pack-card--highlight {
-  background: var(--dark);
+  background: #6B3A47;
   color: var(--cream);
 }
 .pack-badge {
@@ -863,7 +863,7 @@ ul { list-style: none; }
   right: 24px;
   z-index: 80;
   padding: 13px 24px;
-  background: var(--dark);
+  background: #6B3A47;
   color: var(--cream);
   font-size: 0.8rem;
   font-weight: 400;
