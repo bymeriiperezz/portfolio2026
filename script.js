@@ -60,17 +60,20 @@
     });
   });
 
-  /* ---- VIDEO HOVER PLAY/PAUSE (portfolio) ---- */
+  /* ---- MOSTRAR PRIMER FOTOGRAMA + HOVER PLAY/PAUSE ---- */
   document.querySelectorAll('.portfolio-item').forEach(item => {
     const video = item.querySelector('video');
     if (!video) return;
+
+    // Forzar primer fotograma visible
+    video.currentTime = 0.01;
 
     item.addEventListener('mouseenter', () => {
       video.play().catch(() => {});
     });
     item.addEventListener('mouseleave', () => {
       video.pause();
-      video.currentTime = 0;
+      video.currentTime = 0.01;
     });
   });
 
