@@ -409,11 +409,27 @@ ul { list-style: none; }
   border-color: var(--dark);
 }
 
-/* Masonry-ish portfolio grid */
+/* Portfolio sector groups */
+.portfolio-sector {
+  margin-bottom: 56px;
+}
+.portfolio-sector-title {
+  font-family: var(--ff-serif);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--mid);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--nude);
+}
+
+/* Portfolio grid — siempre 3 columnas verticales */
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 280px;
+  grid-auto-rows: 420px;
   gap: 10px;
 }
 .portfolio-item {
@@ -423,12 +439,8 @@ ul { list-style: none; }
   background: var(--nude);
   cursor: pointer;
 }
-.portfolio-item--tall {
-  grid-row: span 2;
-}
-.portfolio-item--wide {
-  grid-column: span 2;
-}
+.portfolio-item--tall { grid-row: auto; }
+.portfolio-item--wide { grid-column: auto; }
 .portfolio-video-wrap {
   width: 100%;
   height: 100%;
@@ -496,17 +508,17 @@ ul { list-style: none; }
   padding: var(--section-pad) var(--gutter);
 }
 .sobre-inner {
-  max-width: var(--max-w);
+  max-width: 960px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 380px 1fr;
   gap: 64px;
   align-items: center;
 }
 .sobre-images--single {
   grid-template-columns: 1fr !important;
 }
-.sobre-images--single .sobre-img-main { height: 520px; }
+.sobre-images--single .sobre-img-main { height: 460px; }
 .sobre-images {
   position: relative;
   display: grid;
@@ -712,7 +724,7 @@ ul { list-style: none; }
    PROCESO
    ============================================ */
 .proceso {
-  background: #3A2E28;
+  background: #4A3B34 !important;
   padding: var(--section-pad) var(--gutter);
 }
 .proceso .section-title {

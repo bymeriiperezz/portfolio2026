@@ -40,7 +40,7 @@
 
   /* ---- PORTFOLIO FILTER ---- */
   const filtros = document.querySelectorAll('.filtro');
-  const portfolioItems = document.querySelectorAll('.portfolio-item');
+  const portfolioSectors = document.querySelectorAll('.portfolio-sector');
 
   filtros.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -48,9 +48,13 @@
       btn.classList.add('active');
 
       const filter = btn.dataset.filter;
-      portfolioItems.forEach(item => {
-        const match = filter === 'all' || item.dataset.category === filter;
-        item.classList.toggle('hidden', !match);
+      portfolioSectors.forEach(sector => {
+        if (filter === 'all') {
+          sector.classList.remove('hidden');
+        } else {
+          const match = sector.dataset.sector === filter;
+          sector.classList.toggle('hidden', !match);
+        }
       });
     });
   });
