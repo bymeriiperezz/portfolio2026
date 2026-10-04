@@ -41,6 +41,7 @@
   /* ---- PORTFOLIO FILTER ---- */
   const filtros = document.querySelectorAll('.filtro');
   const portfolioSectors = document.querySelectorAll('.portfolio-sector');
+  // portfolioItems se obtiene dinámicamente en cada uso
 
   filtros.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -60,7 +61,7 @@
   });
 
   /* ---- LAZY VIDEO LOADING (Intersection Observer) ---- */
-  const lazyVideos = document.querySelectorAll('.portfolio-video-wrap video[preload="none"]');
+  const lazyVideos = document.querySelectorAll('.portfolio-video-wrap video');
 
   if ('IntersectionObserver' in window) {
     const videoObserver = new IntersectionObserver((entries) => {
@@ -75,12 +76,11 @@
 
     lazyVideos.forEach(v => videoObserver.observe(v));
   } else {
-    // Fallback: load all
     lazyVideos.forEach(v => v.load());
   }
 
   /* ---- VIDEO HOVER PLAY/PAUSE (portfolio) ---- */
-  portfolioItems.forEach(item => {
+  document.querySelectorAll('.portfolio-item').forEach(item => {
     const video = item.querySelector('video');
     if (!video) return;
 
@@ -117,7 +117,7 @@
     document.body.style.overflow = '';
   }
 
-  portfolioItems.forEach(item => {
+  document.querySelectorAll('.portfolio-item').forEach(item => {
     item.addEventListener('click', () => {
       const videoEl = item.querySelector('video source');
       if (videoEl) openLightbox(videoEl.src);
