@@ -65,15 +65,12 @@
     const video = item.querySelector('video');
     if (!video) return;
 
-    // Forzar primer fotograma visible
-    video.currentTime = 0.01;
-
     item.addEventListener('mouseenter', () => {
       video.play().catch(() => {});
     });
     item.addEventListener('mouseleave', () => {
       video.pause();
-      video.currentTime = 0.01;
+      video.load(); // reset to poster
     });
   });
 
